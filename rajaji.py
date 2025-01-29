@@ -2,7 +2,7 @@
 #SCRIPT BY TU ADMIN NHI HAI TU CHUTIYA HAI
   
 #Enter Your Bot Token here get it from @botfarher
-BOT_TOKEN=("7579924575:AAGprkf4IZmMMitV_9RpWNU6ZpYfUEx5AdI")
+BOT_TOKEN=("7102257066:AAHJ7ssWRJtlbb6oKhSf61iHsZ9Gh6Gn-vM")
 
   #Enter Your telegram username here without @
 OWNER_USERNAME=("@Ayush143")
