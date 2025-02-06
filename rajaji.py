@@ -8,11 +8,4 @@ OWNER_USERNAME_1 = "@Ayush143"
 OWNER_USERNAME_2 = "@ClutchGodOp"
 
 # Enter Your Admin ID(s) (Get it from @missRose_bot using /info)
-ADMIN_IDS = [859818729]  # List of admin IDs (integers)
-
-
-
-
-
-
-  
+ADMIN_IDS = [859818729, 787517301]  # List of admin IDs (integers)
