@@ -182,7 +182,7 @@ async def bgmi(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         
         await update.message.reply_text(f"🚀 Flooding started on {target_ip}:{port} for {duration} seconds.\n🔑 Attack ID: {unique_id} has been generated for your session.")
         #await asyncio.sleep(duration)
-        await update.message.reply_text(f"✅ Attack is initiated and will be completing after {duration} seconds.")
+        
         
         
 
@@ -374,5 +374,5 @@ if __name__ == '__main__':
     app.add_handler(CommandHandler("help", help_command))
 
     app.run_polling()
-
+await update.message.reply_text(f"✅ Attack is initiated and will be completing after {duration} seconds.")
 
